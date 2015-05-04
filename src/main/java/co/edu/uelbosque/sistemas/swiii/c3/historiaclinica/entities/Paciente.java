@@ -91,7 +91,13 @@ public class Paciente implements Serializable {
     }
 
     public String getNombre() {
+        if (nombre != null){
         return nombre;
+        }else{
+        nombre = "Unknow";
+        return nombre;
+        }
+        
     }
 
     public void setNombre(String nombre) {
@@ -99,10 +105,10 @@ public class Paciente implements Serializable {
     }
 
     public String getApellidos() {
-        if(apellidos == null){
+        if(apellidos != null){
         return apellidos;
         }else{
-            apellidos="desconocido";
+            apellidos="Unknow";
         return apellidos;
         }
         

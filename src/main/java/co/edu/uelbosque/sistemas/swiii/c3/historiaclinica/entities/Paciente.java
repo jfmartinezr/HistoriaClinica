@@ -99,7 +99,13 @@ public class Paciente implements Serializable {
     }
 
     public String getApellidos() {
+        if(apellidos == null){
         return apellidos;
+        }else{
+            apellidos="desconocido";
+        return apellidos;
+        }
+        
     }
 
     public void setApellidos(String apellidos) {
